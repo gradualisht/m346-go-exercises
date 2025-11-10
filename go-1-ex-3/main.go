@@ -1,21 +1,17 @@
 package main
 
 import (
-	"fmt"
-	"math/rand"
-	"time"
+    "fmt"
+    "math/rand"
+    "os"
+    "time"
 )
 
 func main() {
-	var eyes = rand.Intn(5) + 1
-	var when = time.Now()
+    rand.Seed(time.Now().UnixNano())
+    eyes := rand.Intn(6) + 1
+    now := time.Now().Format("2025-11-10 15:04:05")
 
-	// TODO: use fmt.Fprintln instead!
-	fmt.Println("the dice shows", eyes, "eyes")
-
-	// TODO: use fmt.Fprintln instead!
-	fmt.Println("the dice was rolled at", when)
-
-	// TODO: how to write the output into eyes.txt and dice.log?
-	// go run ex3/main.go TODO
+    fmt.Fprintln(os.Stdout, eyes)
+    fmt.Fprintln(os.Stderr, now)  
 }
