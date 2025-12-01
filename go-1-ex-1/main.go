@@ -2,6 +2,7 @@ package main
 
 import "fmt"
 
+// personal information
 func main() {
     var firstName string = "Ylldrit"
     var lastName string = "Abazi"
