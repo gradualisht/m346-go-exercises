@@ -23,13 +23,13 @@ func (s ShortSides) Hypotenuse() float64 {
 
 func main() {
 	// funktionstests
-	fmt.Println(computeHypotenuse(3, 4)) // 5
-	fmt.Println(computeHypotenuse(5, 12)) // 13
-	fmt.Println(computeHypotenuse(8, 15)) // 17
+	fmt.Println(computeHypotenuse(3, 4))
+	fmt.Println(computeHypotenuse(5, 12)) 
+	fmt.Println(computeHypotenuse(8, 15)) 
 
 	// methoden-tests
 	pairs := []ShortSides{{3, 4}, {5, 12}, {8, 15}}
 	for _, p := range pairs {
-		fmt.Printf("(%.0f, %.0f) → %.1f\n", p.A, p.B, p.Hypotenuse())
+		fmt.Printf("(%.0f, %.0f) --> %.1f\n", p.A, p.B, p.Hypotenuse())
 	}
 }

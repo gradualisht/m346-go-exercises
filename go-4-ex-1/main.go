@@ -30,7 +30,7 @@ func main() {
 
 	for _, r := range results {
 		if grade, err := computeGrade(r[0], r[1]); err == nil {
-			fmt.Printf("%.1f von %.1f → Note: %.3f\n", r[0], r[1], grade)
+			fmt.Printf("%.1f von %.1f --> Note: %.3f\n", r[0], r[1], grade)
 		} else {
 			fmt.Println("Fehler:", err)
 		}
